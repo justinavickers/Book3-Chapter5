@@ -242,6 +242,6 @@ let customers = [
 ];
 
 let customerEmails = customers.map(customer => customer.contacts.email)
-    // .reduce((emailList, nextEmail) => emailList += nextEmail, "")
+    .reduce((emailList, nextEmail) => emailList += nextEmail, "")
 
 console.log(customerEmails)
