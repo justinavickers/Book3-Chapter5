@@ -1,4 +1,4 @@
-[
+const sales = [
   {
       "vehicle": {
           "year": 2013,
@@ -1281,3 +1281,5 @@
       }
   }
 ]
+
+module.exports = sales
