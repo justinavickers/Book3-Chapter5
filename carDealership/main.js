@@ -1,7 +1,7 @@
 const sales = require("./cars")
-// Total profit for 2017
-// In which month did they sell the most cars?
-// Which salesperson sold the most cars?
+// Total profit for 2017(x)
+// In which month did they sell the most cars?(x)
+// Which salesperson sold the most cars?(x)
 // Which salesperson made the most profit?
 // Which model was the most popular?
 // Which bank provided the most loans to our customers?
@@ -29,6 +29,11 @@ let maxProfit = 0
 });
 
 
+const salesPersonName = filteredSales.map(sales => [sales.sales_agent.first_name, sales.sales_agent.last_name].join(" "))
+let profitPerSalesMan =
+console.log(salesPersonName)
+
 console.log("Total profit for 2017: ", totalProfits)
 console.log("In which month did they sell the most cars?", months[currentMaxMonth])
+console.log("Which sales person made the most profit?")
 
